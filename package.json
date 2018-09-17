@@ -1,0 +1,25 @@
+{
+  "name": "vue-webpack",
+  "version": "1.0.0",
+  "description": "使用webpack从无到有起一个vue项目",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wq93/Vue-webpack.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wq93/Vue-webpack/issues"
+  },
+  "homepage": "https://github.com/wq93/Vue-webpack#readme",
+  "devDependencies": {
+    "webpack": "^4.19.0"
+  },
+  "dependencies": {
+    "webpack-dev-server": "^3.1.8"
+  }
+}
