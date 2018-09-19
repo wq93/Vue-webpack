@@ -1,11 +1,25 @@
 <template>
-  <div>hell {{name}}</div>
+  <div>
+    <v-title title="Vue 组件化"></v-title>
+    <v-button @click="handleClick">点击按钮</v-button>
+  </div>
 </template>
 <script>
+  import vTitle from './title.vue'
+  import vButton from './button.vue'
+
   export default {
+    components: {
+      vTitle, vButton
+    },
     data() {
       return {
-        name: 'aaa'
+        name: 'wangqi'
+      }
+    },
+    methods: {
+      handleClick(e) {
+        console.log(e)
       }
     }
   }
