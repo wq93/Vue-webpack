@@ -30,6 +30,11 @@ var config = {
         exclude: /node_modules/
       },
       {
+        test: /\.(gif|jpg|png|woff|svg|eot|ttf)\??.*$/,
+        loader: 'url-loader?limit=1024',
+
+      },
+      {
         test: /\.css$/,
         use: ExtractTextPlugin.extract({
           use: 'css-loader',
