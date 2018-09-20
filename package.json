@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack-dev-server --port 8888 --open --config webpack.config.js"
+    "dev": "webpack-dev-server --port 8888 --open --config webpack.config.js",
+    "build": "webpack --progress --hide-modules --config webpack.prod.config.js"
   },
   "repository": {
     "type": "git",
@@ -27,13 +28,16 @@
     "css-loader": "^1.0.0",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "file-loader": "^2.0.0",
+    "html-webpack-plugin": "^3.2.0",
     "style-loader": "^0.23.0",
+    "uglifyjs-webpack-plugin": "^2.0.1",
     "url-loader": "^1.1.1",
     "vue-hot-reload-api": "^2.3.0",
     "vue-loader": "^15.4.2",
     "vue-style-loader": "^4.1.2",
     "vue-template-compiler": "^2.5.17",
-    "webpack": "^4.19.0"
+    "webpack": "^4.19.0",
+    "webpack-merge": "^4.1.4"
   },
   "dependencies": {
     "vue": "^2.5.17",
